@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{%load static%} 
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<title>Iniciar seccion </title>
+
+</head>
+
+
+
+<center>
+
+<body> 
+
+<H2  style="color:rgb(28, 65, 185);">Inicio de seccion</h2>
+    
+    <img  ;" src=" {% static "imagenes/logo.jpg" %} " alt="">
+  
+
+<br>
+<form method="post">
+    {% csrf_token %}
+    <label style="color:rgb(32, 56, 136);" for="usuario"> 
+     Ususario:
+        <input  type="text"  name="username">  
+                     
+    </label>
+    <br>
+    <br>
+
+  
+    <label style="color:rgb(32, 56, 136);" for="pass"> 
+     Clave :
+        <input type="password"  name=  "password">
+        
+
+    </label>
+
+<br>
+<br>
+
+      <button type="submit" style="background-color:thistle ;" name="login"> <h3>Iniciar seccion</h3> </color> </button>
+    
+
+</form>
+
+
+</center>
+
+</body>
+
+
+</html>
